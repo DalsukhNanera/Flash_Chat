@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "274111017665",
+    "project_id": "flash-chat-d311e",
+    "storage_bucket": "flash-chat-d311e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274111017665:android:7bf76df9b5957b20ee9a40",
+        "android_client_info": {
+          "package_name": "com.nanera.flash_chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQxtBFEOctqnsQ48XZC8mkmigtxJqCtaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
