@@ -15,6 +15,8 @@ void main() async {
       storageBucket: null,
       databaseURL: null,
     ),);
+
+    
   } catch (e) {
     print("Error initializing Firebase: $e");
   }

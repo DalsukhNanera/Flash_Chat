@@ -1,5 +1,6 @@
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flash_chat/screens/toastmessage.dart';
 import 'package:flash_chat/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import '../componenets/roundbutton.dart';
@@ -94,7 +95,11 @@ try {
              });
               }
               catch(e){
-                Navigator.of(context).pushNamed(WelcomeScreen.routename);
+                setState(() {
+               showspinning = false ;
+             });
+                toastmessage.errormessage(e.toString());
+                //Navigator.of(context).pushNamed(WelcomeScreen.routename);
               }
       
              },)

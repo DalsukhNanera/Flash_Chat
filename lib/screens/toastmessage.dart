@@ -5,6 +5,14 @@ class toastmessage extends Fluttertoast {
 
   static  errormessage(String message)
   {
-    Fluttertoast.showToast(msg: message,webBgColor: Colors.red,);
+   Fluttertoast.showToast(
+  msg: message,
+  toastLength: Toast.LENGTH_SHORT, 
+  gravity: ToastGravity.BOTTOM, 
+  timeInSecForIosWeb: 3, 
+  backgroundColor: Colors.black.withOpacity(0.7), 
+  textColor: Colors.white, 
+  fontSize: 16.0, 
+);
   }
 }

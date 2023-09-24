@@ -73,17 +73,24 @@ class _LoginScreenState extends State<LoginScreen> {
                   try {
                     final user = await _auth
                         .signInWithEmailAndPassword(
-                            email: email, password: password)
-                        .onError((error, stackTrace) =>
-                            toastmessage.errormessage(error.toString()));
-
+                            email: email, password: password);
                     if (user != null) {
                       Navigator.of(context).pushNamed(ChatScreen.routename);
                     }
                     setState(() {
                       showspinning = false;
                     });
-                  } catch (e) {
+
+                    if(user == null)
+                    {
+                      toastmessage.errormessage('invalid credetails');
+                      print("i am here");
+                    }
+                  }
+                   catch (e) {
+                    setState(() {
+                      showspinning = false;
+                    });
                     toastmessage.errormessage(e.toString());
                   }
                 },
